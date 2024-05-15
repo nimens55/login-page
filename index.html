@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="app__container container">
+        <div class="app__col-1">
+          <div class="app__content">
+            <h1 class="app__title">Добро пожаловать&nbsp;&#128075;</h1>
+            <p class="app__text"
+              >Сегодня новый день. Это твой день.<br />Ты его формируешь. Войди, чтобы начать управлять своими проектами.</p
+            >
+            <form class="app__form form" action="#" method="get">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="mail">Почта</label>
+                  <input class="form__field" id="mail" type="email" name="mail" placeholder="Example@email.com" required />
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="password">Пароль</label>
+                  <input
+                    class="form__field"
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Пароль должен содержать 8 символов"
+                    required />
+                </li>
+              </ul>
+              <a class="form__link link" href="#">Забыли пароль?</a>
+              <button type="submit" class="form__button">Войти</button>
+            </form>
+            <p class="app__registration">У меня нет аккаунта! <a class="link" href="#">Зарегистрироваться</a></p>
+          </div>
+        </div>
+        <div class="app__col-2">
+          <picture>
+            <source width="720" height="379" src="/assets/image/image_mob.jpg" media="(max-width: 767.98px)" />
+            <img class="app__image" width="816" height="1076" src="/assets/image/image.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
