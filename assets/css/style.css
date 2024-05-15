@@ -36,6 +36,7 @@
   --background_1: #d4d7e3;
   --background_2: #f7fbff;
   --background_3: #162d3a;
+  --background_4: #25475c;
 }
 
 body {
@@ -103,6 +104,11 @@ body {
   color: var(--text_4);
 
   background-color: var(--background_2);
+  transition: border-color 0.5s ease;
+}
+
+.form__field:focus {
+  border-color: var(--background_4);
 }
 
 .form__link {
@@ -122,6 +128,12 @@ body {
   color: var(--text_5);
 
   background-color: var(--background_3);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.form__button:hover {
+  background-color: var(--background_4);
 }
 
 /* App */
